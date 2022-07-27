@@ -1,0 +1,24 @@
+/*
+Theme Name: Novo Health Blog Theme By BeaverGlobal
+Author: Oleg Bo For BeaverGlobal
+Author URI: http://beaverglobal.com/
+Description: This is a Novo Health Blog Theme By BeaverGlobal Developed By Oleg Bo
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+html,
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Assistant', sans-serif;
+	font-weight: normal;
+	font-size: 19px;
+	direction: rtl;
+	transition: 0s;
+	color: #000;
+	background: beige;
+}
+.container{
+	max-width: 1140px !important;
+}

@@ -1,0 +1,26 @@
+{
+  "name": "novohealth",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "npx npm-force-resolutions"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-terser": "^2.1.0",
+    "sass": "^1.54.0",
+    "vinyl-ftp": "^0.6.1"
+  },
+  "resolutions": {
+    "glob-parent": "^6.0.2"
+  },
+  "devDependencies": {},
+  "description": ""
+}
