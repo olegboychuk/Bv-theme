@@ -26,6 +26,12 @@ if ( ! function_exists( 'bv_styles_scripts' ) ) {
 		// Bootstrap js
 		wp_enqueue_script( 'bootstrap-script', '//cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js' );
 
+		// Swiper css
+		wp_enqueue_style( 'Swiper-style', '//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css' );
+
+		// Swiper js
+		wp_enqueue_script( 'Swiper-script', '//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css' );
+
 		// Aos
 		wp_enqueue_style( 'aos', 'https://unpkg.com/aos@2.3.1/dist/aos.css' );
 		wp_enqueue_script('aos-script', 'https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js');

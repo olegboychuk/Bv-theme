@@ -3,6 +3,8 @@
 const gulp = require('gulp');
 
 const sass = require('gulp-sass')(require('sass'));
+const rtlcss  = require('gulp-rtlcss');
+const rename = require('gulp-rename');
 const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
 
@@ -34,7 +36,11 @@ function cssTask() {
     .pipe(cleanCSS({
       compatibility: '*'
     }))
-    .pipe(gulp.dest('./'));
+    .pipe(gulp.dest('./'))
+
+    .pipe(rtlcss())                     // Convert to RTL
+    .pipe(rename({ basename: 'rtl' }))  // Rename to rtl.css
+    .pipe(gulp.dest('./'));             // Output (rtl.css)
 }
 
 function jsTask() {
