@@ -1,0 +1,7 @@
+@use 'colors';
+.lng-elm{
+    padding: 4px 10px;
+    display: inline-block;
+    background-color: colors.$primary-color ;
+    color: colors.$white-color;
+}

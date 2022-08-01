@@ -1,0 +1,44 @@
+@use 'colors';
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav.nav-menu{
+    ul {
+        text-align: left;
+        float: left;
+    }
+    li.menu-item  { 
+        display: inline-block;
+    }
+    a {
+        display: block;
+        width: 100%;
+        padding: 6px 12px;
+        text-decoration: none;
+        color: colors.$primary-color;
+    }
+    a:focus,
+    a:hover{
+        color: inherit;
+        background-color: #fff;
+    }
+    ul.dropdown-menu{
+        padding: 0;
+        border-radius: 0;
+    }
+    ul.dropdown-menu{ 
+        li.menu-item{
+            width: 100%;
+        }
+        a.dropdown-item{
+            padding: 1rem 2rem;
+        }
+        a.dropdown-item:hover,
+        a.dropdown-item.active{
+            background-color: #e9ecef;
+            color: colors.$primary-color;
+        }
+    }
+}
