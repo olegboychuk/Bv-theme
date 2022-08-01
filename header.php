@@ -7,7 +7,11 @@
 </head>
 <body <?php body_class(); ?>>
 <?php 
-$image = (is_front_page())? get_field('logo_home','option') : get_field('logo','option');
+if(get_field('logo_home','option')):
+	$image_logo = (is_front_page())? get_field('logo_home','option') : get_field('logo','option');
+else:
+	$image_logo = get_field('logo','option');
+endif;
 $header_class = is_front_page()? 'home':'';
 ?>
 <?php wp_body_open(); ?>
