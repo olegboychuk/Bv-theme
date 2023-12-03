@@ -14,9 +14,9 @@ const terser = require('gulp-terser');
 const ftp = require('vinyl-ftp');
 
 const ftpPath     = '/public_html/clients/novo/wp-content/themes/novohealth'; // e.g /folder/subfolder/wp-content/themes/custom-theme
-const ftpHost     = '185.56.73.24';
-const ftpUser     = 'beaverglobal';
-const ftpPassword = 'lCPqTrjveevR';
+const ftpHost     = '';
+const ftpUser     = '';
+const ftpPassword = '';
 
 const conn = ftp.create({
   host: ftpHost,
