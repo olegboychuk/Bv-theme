@@ -13,7 +13,7 @@ const terser = require('gulp-terser');
 
 const ftp = require('vinyl-ftp');
 
-const ftpPath     = '/public_html/clients/novo/wp-content/themes/novohealth'; // e.g /folder/subfolder/wp-content/themes/custom-theme
+const ftpPath     = ''; // e.g /folder/subfolder/wp-content/themes/custom-theme
 const ftpHost     = '';
 const ftpUser     = '';
 const ftpPassword = '';
